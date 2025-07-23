@@ -1,0 +1,58 @@
+{
+  "Jobs": [
+    {
+      "id": "d32c",
+      "customerType": "Patient",
+      "Encounter": "Yes",
+      "Description": "fdfdfdfd",
+      "Rate": "very_poor",
+      "Suggestion": "dfdfdf",
+      "Contact": "dfdf"
+    },
+    {
+      "id": "02bc",
+      "customerType": "Patient",
+      "Encounter": "",
+      "Description": "",
+      "Rate": "poor",
+      "Suggestion": "gfgf",
+      "Contact": "fgfgfg"
+    },
+    {
+      "id": "0101",
+      "customerType": "Patient",
+      "Encounter": "",
+      "Description": "",
+      "Rate": "Good",
+      "Suggestion": "tytyty",
+      "Contact": "ytytyt"
+    },
+    {
+      "id": "fbb2",
+      "customerType": "Staff",
+      "Encounter": "Yes",
+      "Description": "dfdfdfdfdfdfdsvcvcv",
+      "Rate": "poor",
+      "Suggestion": "cvcvcvcvc",
+      "Contact": "vffr3343"
+    },
+    {
+      "id": "f1fe",
+      "customerType": "Staff",
+      "Encounter": "No",
+      "Description": "",
+      "Rate": "poor",
+      "Suggestion": "v",
+      "Contact": "v"
+    },
+    {
+      "id": "b4fe",
+      "customerType": "Patient",
+      "Encounter": "No",
+      "Description": "",
+      "Rate": "poor",
+      "Suggestion": "nbhb b b ",
+      "Contact": ""
+    }
+  ]
+}
