@@ -20,8 +20,7 @@ const Login = () => {
 
     try {
       const response = await axios.post('/login', { email, password },
-        {
-         credentials: 'include'}
+        { withCredentials: true }
       )
       
       if (response.data.success) {

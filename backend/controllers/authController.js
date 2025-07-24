@@ -80,9 +80,10 @@ const adminRegister = async (req, res) =>{
      //sending Token in HTTP-only cookie
      res.cookie("token", token, {
 
-         httpOnly: false,
-      secure: false, // Requires HTTPS
+         httpOnly: true,
+      secure: true, // Requires HTTPS
   sameSite: 'none', // Needed for cross-site cookies (if frontend/backend are on different domains)
+   domain: '.onrender.com', // Match Render's domain
   maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days expiry
      }).json({
       success: true,
