@@ -19,7 +19,10 @@ const Login = () => {
     setIsLoading(true)
 
     try {
-      const response = await axios.post('/login', { email, password })
+      const response = await axios.post('/login', { email, password },
+        {
+         credentials: 'include'}
+      )
       
       if (response.data.success) {
       await getLoggedIn(); // This will update both loggedIn and user states
