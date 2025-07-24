@@ -11,7 +11,7 @@ import {AuthContextProvider} from './context/AuthContext'
 import ProtectedRoutes from './ProtectedRoutes';
 
 
-axios.defaults.baseURL = `${import.meta.env.url}`
+axios.defaults.baseURL = "https://atiwabackend.onrender.com"
 axios.defaults.withCredentials = true
 const App = () => {
 

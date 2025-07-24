@@ -18,7 +18,7 @@ app.use(cookieParser())
 const HOST = '0.0.0.0';
 // cors config
 app.use(cors({
-    origin: "http://localhost:3000",//URL of the react App
+    origin: "https://atiwawesthospital.vercel.app",//URL of the react App
     credentials: true
   }))
 
