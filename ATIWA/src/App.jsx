@@ -11,7 +11,7 @@ import {AuthContextProvider} from './context/AuthContext'
 import ProtectedRoutes from './ProtectedRoutes';
 
 
-axios.defaults.baseURL = "http://localhost:8000"
+axios.defaults.baseURL = `${import.meta.env.url}`
 axios.defaults.withCredentials = true
 const App = () => {
 
