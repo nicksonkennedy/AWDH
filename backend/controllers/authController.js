@@ -134,12 +134,14 @@ const adminRegister = async (req, res) =>{
 
 
 //logout functiom
-const adminlogout = async (req, res) =>{
-    res.cookie("token", "", {
-        httpOnly: true,
-        expires: new Date(0)
-    }).send()
-}
+const adminlogout = async (req, res) => {
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: true,
+    sameSite: 'none'
+  });
+  res.status(200).json({ message: "Logged out successfully" });
+};
 
 
 module.exports = {

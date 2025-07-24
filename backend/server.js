@@ -18,7 +18,6 @@ app.use(cookieParser())
 const HOST = '0.0.0.0';
 // cors config
 const allowedOrigins = [
-  "http://localhost:3000", // Dev
   "https://atiwawesthospital.vercel.app", // Prod
   "https://www.atiwawesthospital.vercel.app"
 ];

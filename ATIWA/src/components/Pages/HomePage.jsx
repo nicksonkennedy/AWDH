@@ -38,7 +38,8 @@ const HomePage = () => {
       Rate,
       Suggestion,
       Contact
-    }
+    },
+    { withCredentials: true }
     )
     setstatus(true)
     toast.success("Your Complaint has been submitted")
