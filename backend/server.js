@@ -17,10 +17,25 @@ app.use(cookieParser())
 
 const HOST = '0.0.0.0';
 // cors config
+const allowedOrigins = [
+  "http://localhost:3000", // Dev
+  "https://atiwawesthospital.vercel.app", // Prod
+  "https://www.atiwawesthospital.vercel.app"
+];
+
 app.use(cors({
-    origin: "https://atiwawesthospital.vercel.app",//URL of the react App
-    credentials: true
-  }))
+  origin: function (origin, callback) {
+    // Allow requests with no origin (e.g., mobile apps, Postman)
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Blocked by CORS"));
+    }
+  },
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
+}));
 
 //authentication Routes
 app.use('/', require('./routes/authRoute'))
