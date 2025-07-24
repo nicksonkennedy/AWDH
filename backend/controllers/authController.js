@@ -83,7 +83,6 @@ const adminRegister = async (req, res) =>{
          httpOnly: true,
       secure: true, // Requires HTTPS
   sameSite: 'none', // Needed for cross-site cookies (if frontend/backend are on different domains)
-  domain: '.atiwabackend.onrender.com/', // Replace with your Render/Vercel domain (omit for localhost)
   maxAge: 30 * 24 * 60 * 60 * 1000, // 30 days expiry
      }).json({
       success: true,
